@@ -3,3 +3,4 @@
 
 data/*
 !data/artists
+!data/spotify_links.json
