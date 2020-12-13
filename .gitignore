@@ -2,5 +2,5 @@
 .vscode
 
 data/*
-!data/artists
+!data/*.zip
 !data/spotify_links.json
