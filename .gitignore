@@ -5,3 +5,5 @@ data/*
 !data/*.zip
 !data/spotify_links.json
 !data/playlist_indices.json
+
+__pycache__/
