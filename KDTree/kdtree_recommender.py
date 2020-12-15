@@ -51,13 +51,6 @@ class KDTreeRecommender:
         rng = maxs - mins
         return high - (((high - low) * (maxs - rawpoints)) / rng)
 
-        #Convert to float
-        for track in features:
-            float_array = track.astype(np.float)
-            new_features.append(float_array)
-        
-        return names, new_features
-
     def query(self, track_index, k):
         track_input = np.reshape(self.scaled_features[track_index], newshape=(1, len(self.scaled_features[track_index])))
         return self.tree.query(track_input, k=k)
